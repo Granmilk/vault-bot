@@ -3,6 +3,8 @@ package com.gtbr.vaultbot;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
+import com.gtbr.vaultbot.listener.MessageListener;
+
 import javax.security.auth.login.LoginException;
 
 import org.springframework.boot.SpringApplication;
@@ -16,7 +18,9 @@ public class VaultBotApplication {
 
     public static void main(String[] args) throws LoginException {
         SpringApplication.run(VaultBotApplication.class, args);
-        jda = JDABuilder.createDefault(DISCORD_TOKEN).build();
+        jda = JDABuilder.createDefault(DISCORD_TOKEN)
+                .addEventListeners(MessageListener.class)
+                .build();
     }
 
     public static JDA getJda(){
