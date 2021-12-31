@@ -1,5 +1,5 @@
 [![CodeQL](https://github.com/Granmilk/vault-bot/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Granmilk/vault-bot/actions/workflows/codeql-analysis.yml)
-#🔐vault-bot
+# 🔐 vault-bot
 A discord bot to handle with auth for private channels
 
 ### Reference Documentation
