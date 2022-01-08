@@ -21,7 +21,7 @@ public class PrivateChannel {
 
     @OneToOne
     @JoinColumn(name = "guild_id")
-    private Guild guildId;
+    private Guild guild;
 
     @OneToOne
     @JoinColumn(name = "user_id")

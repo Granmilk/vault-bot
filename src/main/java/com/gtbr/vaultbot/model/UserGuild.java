@@ -25,5 +25,5 @@ public class UserGuild {
 
     @OneToOne
     @JoinColumn(name = "discord_id")
-    private UserProfile discord;
+    private UserProfile userProfile;
 }
