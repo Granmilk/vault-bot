@@ -25,7 +25,7 @@ public class PrivateChannel {
 
     @OneToOne
     @JoinColumn(name = "user_id")
-    private UserProfile userProfileId;
+    private UserProfile userProfile;
 
     @Column
     private String password;
