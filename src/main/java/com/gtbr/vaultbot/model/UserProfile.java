@@ -33,10 +33,4 @@ public class UserProfile {
 
     @Column
     private String generalPassword;
-
-    @Column
-    private Boolean isAdmin;
-
-    @Column
-    private String guildId;
 }
