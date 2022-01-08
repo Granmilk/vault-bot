@@ -1,5 +1,6 @@
 package com.gtbr.vaultbot.model;
 
+import com.gtbr.vaultbot.model.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +19,13 @@ public class UserGuild {
     @Id
     @Column
     private String userGuildId;
+
+    @Column
+    private Boolean isAdmin;
+
+    @Column
+    @Enumerated(value = EnumType.STRING)
+    private Status status;
 
     @OneToOne
     @JoinColumn(name = "guild_Id")
