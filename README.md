@@ -1,4 +1,5 @@
 [![CodeQL](https://github.com/Granmilk/vault-bot/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Granmilk/vault-bot/actions/workflows/codeql-analysis.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Granmilk_vault-bot&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Granmilk_vault-bot)
 # 🔐 vault-bot
 A discord bot to handle with auth for private channels
 
