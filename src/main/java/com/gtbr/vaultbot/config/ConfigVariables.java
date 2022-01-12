@@ -20,4 +20,7 @@ public class ConfigVariables {
 
     @Value("${discord.token}")
     private String discordToken;
+
+    @Value("${migrate}")
+    private boolean migrate;
 }
