@@ -9,3 +9,5 @@ spring:
       ddl-auto: update
 discord:
   token: ${DISCORD_TOKEN}
+
+migrate: ${MIGRATE:false}
