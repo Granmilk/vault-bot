@@ -17,4 +17,7 @@ public class ConfigVariables {
 
     @Value("${spring.datasource.password}")
     private String dataBasePassword;
+
+    @Value("${discord.token}")
+    private String discordToken;
 }

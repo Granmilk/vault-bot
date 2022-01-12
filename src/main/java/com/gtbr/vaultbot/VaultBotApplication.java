@@ -20,7 +20,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class VaultBotApplication {
 
     private static JDA jda;
-    private static final String DISCORD_TOKEN = System.getenv("DISCORD_TOKEN");
 
 
     public static void main(String[] args) throws LoginException {
@@ -31,7 +30,7 @@ public class VaultBotApplication {
         if (Arrays.stream(args).anyMatch(arg -> arg.equalsIgnoreCase("MIGRATE")))
             flyway.migrate();
 
-        jda = JDABuilder.createDefault(DISCORD_TOKEN)
+        jda = JDABuilder.createDefault(configVariables.getDiscordToken())
                 .addEventListeners(MessageListener.class)
                 .build();
     }
